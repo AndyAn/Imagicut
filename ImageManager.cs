@@ -395,6 +395,7 @@ namespace Imagicut
             #region Set Watermark
 
             string output = Path.Combine(DataPool.WorkingDirectory, "output");
+            FSOpt.CreateDirectory(output);
             int max = DataPool.Images.Count;
             int cur = 0;
 

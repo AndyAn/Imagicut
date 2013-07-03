@@ -143,12 +143,12 @@ namespace Imagicut
 
             #endregion
 
-            Console.WriteLine(string.Format("{0} images loaded. Total count is {1}.\n", count, images.Count));
+            Console.WriteLine(string.Format("{0} image{2} loaded. Totally loaded {1} image{3}.\n", count, images.Count, (count > 1 ? "s" : ""), (images.Count > 1 ? "s" : "")));
         }
 
         internal static void Release()
         {
-            Console.WriteLine(string.Format("{0} images released.\n", images.Count));
+            Console.WriteLine(string.Format("{0} image{1} released.\n", images.Count, (images.Count > 1 ? "s" : "")));
 
             images.Clear();
             images = null;
